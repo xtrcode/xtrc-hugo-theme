@@ -1,0 +1,21 @@
+{
+  "name": "hugo-xtrc-theme",
+  "version": "2.0.0",
+  "description": "A minimalist hugo theme",
+  "main": "bulma.sass",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/theme.scss css/theme.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "@xtrcode",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "bulma": "^0.9.4",
+    "clean-css-cli": "^5.6.2",
+    "node-sass": "^9.0.0",
+    "postcss-cli": "^10.1.0",
+    "rimraf": "^5.0.5"
+  }
+}
