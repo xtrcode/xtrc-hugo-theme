@@ -2,6 +2,10 @@
 
 Custom theme for my blog and additional pages i host using bulma as it's base. 
 
+# Demo
+
+![Demo](demo.png)
+
 # License
 The MIT License (MIT)
 
