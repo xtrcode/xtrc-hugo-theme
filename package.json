@@ -4,8 +4,10 @@
   "description": "A minimalist hugo theme",
   "main": "bulma.sass",
   "scripts": {
+    "build": "npm run css-build;npm run concat-css; cp dist/theme.css ../xnet/site/blog/hugo/xtrc/themes/xtrc-black/static/css/bulma.css;cp node_modules/bulma-carousel/dist/js/bulma-carousel.js ../xnet/site/blog/hugo/xtrc/themes/xtrc-black/static/js/bulma-carousel.js",
     "css-build": "node-sass --omit-source-map-url sass/theme.scss css/theme.css",
     "css-watch": "npm run css-build -- --watch",
+    "concat-css": "cat css/* > dist/theme.css",
     "start": "npm run css-watch"
   },
   "author": "@xtrcode",
@@ -13,6 +15,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "bulma": "^0.9.4",
+    "bulma-carousel": "^4.0.24",
     "clean-css-cli": "^5.6.2",
     "node-sass": "^9.0.0",
     "postcss-cli": "^10.1.0",
